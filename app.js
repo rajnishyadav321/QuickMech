@@ -1,9 +1,10 @@
 var express = require('express')
-    ,   app = express()
+    
     ,   server = require('http').createServer(app)
     ,   io = require('socket.io').listen(server)
     ,   emitter = require('./util/socket-util.js')(io)
     ,   path = require('path')
+    Rajnish
     ,   logger = require('morgan')
     ,   cookieParser = require('cookie-parser')
     ,   bodyParser = require('body-parser')
